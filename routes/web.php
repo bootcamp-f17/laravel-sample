@@ -20,5 +20,5 @@ Route::get('/test', function () {
 });
 
 Route::get('/portfolio/js/weather', function() {
-  return view('portfolio.js.weather.index');
+  return view('js-weather.index');
 });
