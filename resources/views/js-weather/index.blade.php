@@ -18,7 +18,7 @@
 
   <div id="inputForm" class="form-inline">
 
-    <input type="number" class="form-control" placeholder="40507" id="zipInput">
+    <input type="number" class="form-control" placeholder="{{ $default }}" id="zipInput">
 
     <button type="button" class="btn btn-success" id="weatherButton">Get Weather</button>
 

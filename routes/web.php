@@ -15,10 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', function () {
-  return "Hello from the routes/web.php file!";
-});
-
 Route::get('/portfolio/js/weather', function() {
-  return view('js-weather.index');
+  
+  // This works - supplying values directly
+  // return view('js-weather.index', ['default' => '81001']);
+
+  // Supply values as variables
+  // $default = '88901';
+  // return view('js-weather.index', ['default' => $default]);
+
+  // Shortcut with compact
+  $default = '60007';
+  return view('js-weather.index', compact('default'));
+
 });
